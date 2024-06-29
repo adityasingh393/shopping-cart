@@ -1,10 +1,13 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
 
+
 const ProductPage: React.FC = () => {
+  
+
   return (
     <div>
-      <h1>Product Listing</h1>
+      <h1>Happy Shopping</h1>
       <ProductList />
     </div>
   );

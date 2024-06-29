@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className='navbar'>
       <Link to={isCartPage ? '/' : '/cart'}>
-        {isCartPage ? 'Go to Products' : 'Go to Cart'}
+        {isCartPage ? 'Products' : 'Cart'}
       </Link>
     </nav>
   );

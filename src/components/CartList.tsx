@@ -11,11 +11,11 @@ const CartList: React.FC = () => {
         <div key={item.id}>
           <img src={item.image} alt={item.title} width={100} />
           <h2>{item.title}</h2>
-          <p>${item.price} x {item.quantity}</p>
-          <button onClick={() => dispatch({ type: 'REMOVE_FROM_CART', id: item.id })}>Remove</button>
+          <p>${item.price}</p>
+          <button onClick={() => dispatch({ type: 'REMOVE_FROM_CART', id: item.id })}>Remove Item</button>
         </div>
       ))}
-      <h2>Total: ${totalPrice.toFixed(2)}</h2>
+      <h2>Total: ${totalPrice}</h2>
       <button onClick={() => dispatch({ type: 'CLEAR_CART' })}>Clear Cart</button>
     </div>
   );

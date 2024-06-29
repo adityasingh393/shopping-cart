@@ -20,6 +20,6 @@ export const setCartItems = async (items: CartItem[]) => {
   try {
     await localforage.setItem('cartItems', items);
   } catch (error) {
-    console.error('Error setting cart items in localforage:', error);
+    console.error('Ccan not set item localforage:', error);
   }
 };
